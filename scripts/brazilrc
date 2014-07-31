@@ -1,0 +1,45 @@
+# Create Workspace
+function createWorkspace() {
+    name=$1;
+    echo -e "Creating workspace $name";
+    bws create -ws -n $1 -r $1
+}
+alias cws='createWorkspace';
+
+function pullPackage() {
+    echo -e "Pulling package: $1";
+    bws use -p $1;
+}
+alias pull='pullPackage';
+
+function setWSVersionSet() {
+    bws use -vs $1;
+}
+alias bvs='setWSVersionSet';
+
+function gacdLogs() {
+    cdToEnvLogs TelephonyGlobalAcdService;
+}
+
+function voiceLogs() {
+    cdToEnvLogs TelephonyVoiceService;
+}
+
+function cdToEnvLogs() {
+    cdToEnv $1;
+    cd var/output/logs;
+}
+
+function cdToEnv() {
+    cd /apollo/env/$1;
+}
+
+function act() {
+    sudo /apollo/bin/runCommand -e $1 -a Activate;
+}
+
+function deact() {
+    sudo /apollo/bin/runCommand -e $1 -a Deactivate;
+}
+
+echo -e "Loaded Brazil and Apollo scripts."

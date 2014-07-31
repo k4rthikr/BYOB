@@ -1,0 +1,15 @@
+# Team: Communications Core
+# Depends on brazilrc
+
+function gacdLogs() {
+    cdToEnvLogs TelephonyGlobalAcdService;
+}
+
+function voiceLogs() {
+    cdToEnvLogs TelephonyVoiceService;
+}
+
+alias gacdActivate='sudo /apollo/bin/runCommand -e TelephonyGlobalAcdService -a Activate'
+alias voiceActivate='sudo /apollo/bin/runCommand -e TelephonyVoiceService -a Activate'
+
+echo -e "Loaded Team scripts."

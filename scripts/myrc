@@ -1,0 +1,9 @@
+# My bash script 
+#           -Me
+# How to use:
+# 1. source <full path to myrc>
+# 2. export RKARTHI_BIN=<full path to scripts folder>
+echo -e "Loading rkarthi's profile."
+source $RKARTHI_BIN/brazilrc
+source $RKARTHI_BIN/teamrc
+echo -e "Complete."
