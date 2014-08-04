@@ -4,6 +4,15 @@
 # 1. source <full path to myrc>
 # 2. export RKARTHI_BIN=<full path to scripts folder>
 echo -e "Loading rkarthi's profile."
+
 source $RKARTHI_BIN/brazilrc
 source $RKARTHI_BIN/teamrc
+source $RKARTHI_BIN/gitrc
+
+# IDEA
+alias I='/apollo/env/IntelliJ-13/bin/launch-idea'
+
+# Colors for GREP
+export GREP_OPTIONS='--color=auto'
+export PATH=$RKARTHI_BIN:$PATH
 echo -e "Complete."

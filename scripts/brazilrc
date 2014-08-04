@@ -1,3 +1,11 @@
+alias bws='brazil ws'
+alias bb='brazil-build'
+alias bba='bb apollo-pkg'
+alias bbc='bb clean'
+alias bbca='bbc && bba'
+alias bsmd='bws --sync --md'
+alias bbs='bb server'
+
 # Create Workspace
 function createWorkspace() {
     name=$1;
