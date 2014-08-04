@@ -1,0 +1,2 @@
+# Git related commands
+alias gs='git status';
