@@ -1,2 +1,3 @@
 # Git related commands
 alias gs='git status';
+# git config --global core.excludesfile ~/.gitignore

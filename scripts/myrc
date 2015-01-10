@@ -20,3 +20,7 @@ source $RKARTHI_BIN/macrc
 export GREP_OPTIONS='--color=auto'
 export PATH=$RKARTHI_BIN:$PATH
 echo -e "Complete."
+
+# SSH
+alias s='ssh rkarthi-desktop.aka.amazon.com'
+alias S='ssh rkarthi-1.desktop.amazon.com'

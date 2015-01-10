@@ -1,3 +1,6 @@
+# Workplace location
+alias ws='/workplace'
+
 alias bws='brazil ws'
 alias bb='brazil-build'
 alias bba='bb apollo-pkg'
