@@ -5,12 +5,16 @@
 # 2. export RKARTHI_BIN=<full path to scripts folder>
 echo -e "Loading rkarthi's profile."
 
+alias myScripts='cd $RKARTHI_BIN'
 source $RKARTHI_BIN/brazilrc
 source $RKARTHI_BIN/teamrc
 source $RKARTHI_BIN/gitrc
 
+# MAC RC
+source $RKARTHI_BIN/macrc
+
 # IDEA
-alias I='/apollo/env/IntelliJ-13/bin/launch-idea'
+# alias I='/apollo/env/IntelliJ-13/bin/launch-idea'
 
 # Colors for GREP
 export GREP_OPTIONS='--color=auto'

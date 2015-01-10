@@ -1,0 +1,8 @@
+# Custom additions for MAC.
+# Note: This file is not source automatically. Check myrc.
+
+# To fix jdk8 issue (HT3.1 does not work with jdk 1.8)
+# Reference: https://sage.amazon.com/posts/19385
+export ANT_OPTS='-Dbuild.compiler=javac1.7'
+
+echo "Loaded MAC scripts"
