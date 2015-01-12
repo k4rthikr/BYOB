@@ -32,4 +32,4 @@ alias S='ssh rkarthi-1.desktop.amazon.com'
 
 # GIT PROMPT 
 source $RKARTHI_BIN/git-prompt
-export PS1="\[$Green\]\t-[\u] \[$Yellow\]\[$Yellow\]\w\[$IRed\] \$(__git_ps1) \[$White\]\$ "
+export PS1="\[$Green\]\t-[\u:\h] \[$Yellow\]\[$Yellow\]\w\[$IRed\] \$(__git_ps1) \[$White\]\$ "
