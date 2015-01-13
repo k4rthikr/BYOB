@@ -13,3 +13,8 @@ alias gacdActivate='sudo /apollo/bin/runCommand -e TelephonyGlobalAcdService -a 
 alias voiceActivate='sudo /apollo/bin/runCommand -e TelephonyVoiceService -a Activate'
 
 echo -e "Loaded Team scripts."
+
+
+# NUANCE related scripts
+
+source $RKARTHI_BIN/nuance/nuancerc
