@@ -1,0 +1,13 @@
+# Various scripts to make nuance managememnt easier.
+# Does not depend on Nuance env variables
+
+export _N_INSTALLER_DIR=~/NUANCE
+export _N_BASEDIR=/usr/local/Nuance
+export _N_VARDIR=/var/local/Nuance
+export _N_DIAGLOGS=$_N_VARDIR/system/diagnosticLogs
+
+alias Nlogs='cd $_N_DIAGLOGS'
+alias Nbase='cd $_N_BASEDIR'
+alias Ntasks='ps auxww | grep nuance'
+
+echo "Loaded Nuance custom scripts."
