@@ -19,7 +19,7 @@ source $RKARTHI_BIN/gitrc
 source $RKARTHI_BIN/colors
 
 # IDEA
-alias I='/apollo/env/IntelliJ-13/bin/launch-idea'
+# alias I='/apollo/env/IntelliJ-13/bin/launch-idea'
 
 # Colors for GREP
 export GREP_OPTIONS='--color=auto'
