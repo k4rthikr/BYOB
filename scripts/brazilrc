@@ -1,5 +1,5 @@
 # Workplace location
-alias ws='cd /workplace'
+alias ws='cd ~/workplace'
 
 alias bws='brazil ws'
 alias bb='brazil-build'

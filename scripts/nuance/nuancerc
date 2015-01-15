@@ -6,8 +6,21 @@ export _N_BASEDIR=/usr/local/Nuance
 export _N_VARDIR=/var/local/Nuance
 export _N_DIAGLOGS=$_N_VARDIR/system/diagnosticLogs
 
+# Product dirs
+export _N_NSS=$_N_BASEDIR/Speech_Server
+export _N_NSS_CLIENT=$_N_NSS/client
+export _N_NSS_SERVER=$_N_NSS/server
+
+# CLI
+
 alias Nlogs='cd $_N_DIAGLOGS'
 alias Nbase='cd $_N_BASEDIR'
 alias Ntasks='ps auxww | grep -i nuance'
+alias Nlib='echo "LD_LIBRARY_PATH = $LD_LIBRARY_PATH"'
 
+alias Nss='cd $_N_NSS_SERVER'
+alias Nssclient='cd $_N_NSS_CLIENT'
+
+# Decoration
 echo "Loaded Nuance custom scripts."
+

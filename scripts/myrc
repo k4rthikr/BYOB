@@ -13,13 +13,13 @@ source $RKARTHI_BIN/teamrc
 source $RKARTHI_BIN/gitrc
 
 # MAC RC
-source $RKARTHI_BIN/macrc
+# source $RKARTHI_BIN/macrc
 
 # COLORS
 source $RKARTHI_BIN/colors
 
 # IDEA
-# alias I='/apollo/env/IntelliJ-13/bin/launch-idea'
+alias I='/apollo/env/IntelliJ-13/bin/launch-idea'
 
 # Colors for GREP
 export GREP_OPTIONS='--color=auto'
@@ -32,4 +32,4 @@ alias S='ssh rkarthi-1.desktop.amazon.com'
 
 # GIT PROMPT 
 source $RKARTHI_BIN/git-prompt
-export PS1="\[$Green\]\t-[\u] \[$Yellow\]\[$Yellow\]\w\[$IRed\] \$(__git_ps1) \[$White\]\$ "
+export PS1="\[$Green\]\t-[\u@\h] \[$Yellow\]\[$Yellow\]\w\[$IRed\] \$(__git_ps1) \[$White\]\$ "
