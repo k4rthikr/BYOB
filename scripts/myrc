@@ -11,6 +11,7 @@ alias myrc='source $RKARTHI_BIN/myrc'
 source $RKARTHI_BIN/brazilrc
 source $RKARTHI_BIN/teamrc
 source $RKARTHI_BIN/gitrc
+source $RKARTHI_BIN/utilsrc
 
 # MAC RC
 # source $RKARTHI_BIN/macrc
