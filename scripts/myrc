@@ -28,7 +28,8 @@ export PATH=$RKARTHI_BIN:$PATH
 echo -e "Complete."
 
 # SSH
-alias s='ssh rkarthi-desktop.aka.amazon.com'
+export UBUNTU_BOX='uf8bc126cc5bd5367ca82.ant.amazon.com'
+alias s='ssh $UBUNTU_BOX'
 alias S='ssh rkarthi-1.desktop.amazon.com'
 
 # GIT PROMPT 
