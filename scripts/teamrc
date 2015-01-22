@@ -11,6 +11,8 @@ function voiceLogs() {
 
 alias gacdActivate='sudo /apollo/bin/runCommand -e TelephonyGlobalAcdService -a Activate'
 alias voiceActivate='sudo /apollo/bin/runCommand -e TelephonyVoiceService -a Activate'
+alias gacdDeactivate='sudo /apollo/bin/runCommand -e TelephonyGlobalAcdService -a Deactivate'
+alias voiceDeactivate='sudo /apollo/bin/runCommand -e TelephonyVoiceService -a Deactivate'
 
 echo -e "Loaded Team scripts."
 
