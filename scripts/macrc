@@ -3,6 +3,7 @@
 
 # To fix jdk8 issue (HT3.1 does not work with jdk 1.8)
 # Reference: https://sage.amazon.com/posts/19385
-export ANT_OPTS='-Dbuild.compiler=javac1.7'
-
+# export ANT_OPTS="-Dbuild.compiler=javac1.7"
+alias ls='ls -G'
+alias ll='ls -lG'
 echo "Loaded MAC scripts"
