@@ -1,0 +1,66 @@
+#!/usr/bin/env zsh
+#
+# Open a mysql prompt to an acdheavy database
+#
+# Example invocations:
+# gacddb integ        # Login to integ with read-only access 
+# gacddb integ-w      # Login to integ with write access
+# gacddb integ-root   # Login to integ with root access
+# gacddb na           # Login to NA Prod with read-only access
+# ...
+#
+# Other hacks:
+# gacddb integ < run-this.sql
+# echo "select NAME from OWNERS" | gacddb integ
+#
+
+locale="$1"
+command="$2"
+[ -x $locale ] && locale="na"
+
+integ_db="integ-cs-acdheavy.db.amazon.com"
+prod_na_db="na-cs-acdheavy.db.amazon.com"
+prod_fe_db="fe-cs-acdheavy.db.amazon.com"
+prod_cn_db="cn-cs-acdheavy.db.amazon.com"
+prod_eu_db="eu-cs-acdheavy.db.amazon.com"
+
+port="8443"
+host="$integ_db"
+
+mset_prefix="com.amazon.cs-telephony.DBCredentials.RO.acdheavy-"
+if [[ -n $(echo "$locale" | grep -E '\-w$') ]]; then
+    mset_prefix="com.amazon.cs-telephony.DBCredentials.acdheavy-"
+elif [[ -n $(echo "$locale" | grep -E '\-root$') ]]; then
+    mset_prefix="com.amazon.cs-telephony.DBCredentials.Root.acdheavy-"
+fi
+
+mset_end="Alpha"
+if [[ -n $(echo "$locale" | grep -E '^integ') ]]; then
+    ; #use defaults
+elif [[ -n $(echo "$locale" | grep -E '^na') ]]; then 
+    host="$prod_na_db"
+    mset_end="Prod-NA"
+elif [[ -n $(echo "$locale" | grep -E '^eu') ]]; then 
+    host="$prod_eu_db"
+    mset_end="Prod-EU"
+elif [[ -n $(echo "$locale" | grep -E '^fe') ]]; then 
+    host="$prod_fe_db"
+    mset_end="Prod-FE"
+elif [[ -n $(echo "$locale" | grep -E '^cn') ]]; then 
+    host="$prod_cn_db"
+    mset_end="Prod-CN"
+fi
+
+material_set="$mset_prefix$mset_end"
+
+echo Using host: $host
+echo Using port: $port
+echo Using material set: $material_set
+
+user=$(/apollo/env/envImprovement/bin/retrieve-material-set-credential  $material_set | head -n1)
+pass=$(/apollo/env/envImprovement/bin/retrieve-material-set-credential  $material_set | tail -n1)
+
+echo Using user: $user
+
+echo "============================================"
+/apollo/env/envImprovement/bin/mysql --default-character-set utf8 --host $host --port $port --user $user --password=$pass acdheavy2 $2

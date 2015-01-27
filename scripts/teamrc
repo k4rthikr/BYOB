@@ -20,3 +20,6 @@ echo -e "Loaded Team scripts."
 # NUANCE related scripts
 
 source $RKARTHI_BIN/nuance/nuancerc
+
+# FreeSWTICH
+alias fs='/apollo/bin/env /apollo/env/TelephonyVoiceService/bin/fs_cli'
