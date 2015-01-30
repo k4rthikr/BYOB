@@ -1,0 +1,8 @@
+for var in "$@"
+do
+    tmux-1.8 splitw "zsh -c \"ssh $var\""
+    tmux-1.8 select-layout tiled
+done
+tmux-1.8 set-window-option synchronize-pane on
+tmux-1.8 kill-pane -t 0
+

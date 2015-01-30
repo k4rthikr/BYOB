@@ -1,0 +1,34 @@
+#! /usr/bin/env zsh
+
+if [[ -z "$@" ]]; then
+    cat <<EOF
+Uses tmux to SSH into multiple hosts.
+
+Usage:
+
+SSH into a list of hosts:
+    tmux-cssh host1.amazon.com host2.amazon.com host2.amazon.com ... etc ...
+ 
+SSH into all hosts in a hostclass:
+    tmux-cssh \`expand-hostclass US-CS-TELEPHONY-TAW-1A --hosts-only\`
+
+SSH into all hosts in an Apollo environment and stage:
+    tmux-cssh \`getApolloEnvironmentHosts -e TelephonyAgentWebsite/NA -s Beta --show N\`
+
+To stop sending key presses to all panes, issue this tmux command:
+:setw synchronize-panes off
+
+EOF
+    return 1
+fi
+
+tmux new-session -d -s cluster
+tmux select-window -t cluster:0
+for host in $@;
+do
+    tmux splitw "zsh -c \"ssh $host\""
+    tmux select-layout tiled
+done
+tmux set-window-option synchronize-pane on
+tmux kill-pane -t 0
+tmux attach-session -t cluster

@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+if (@ARGV % 2 != 0) {
+    print "usage: cssh-envs env1 stage1 env 2 stage2 ...\n";
+    exit;
+}
+for ($i = 0; $i < $#ARGV; $i += 2) {
+    @hosts = (@hosts, `getApolloEnvironmentHosts -e $ARGV[$i] -s $ARGV[$i+1] --show N`);
+}
+print @hosts;
+chomp @hosts;
+`tmux-1.8 new "cssh-envs-internal @hosts"`;
+
