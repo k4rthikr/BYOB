@@ -1,0 +1,4 @@
+# Apollo shortcuts
+alias expand-env='getApolloEnvironmentHosts --show N -e'
+
+echo -e "Loaded Apollo scripts."
