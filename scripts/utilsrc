@@ -1,3 +1,5 @@
 # Play
 alias p8='play -r 8k -b 8'
 alias p16='play -r 16k -b 16'
+alias ps8='play -r 8k -b 8 -e signed-int'
+alias ps16='play -r 16k -b 16 -e signed-int'
