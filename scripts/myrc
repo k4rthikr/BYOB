@@ -9,6 +9,7 @@ alias myScripts='cd $RKARTHI_BIN'
 alias myrc='source $RKARTHI_BIN/myrc'
 
 source $RKARTHI_BIN/brazilrc
+source $RKARTHI_BIN/apollorc
 source $RKARTHI_BIN/teamrc
 source $RKARTHI_BIN/gitrc
 source $RKARTHI_BIN/utilsrc

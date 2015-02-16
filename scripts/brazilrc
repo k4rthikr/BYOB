@@ -53,4 +53,4 @@ function deact() {
     sudo /apollo/bin/runCommand -e $1 -a Deactivate;
 }
 
-echo -e "Loaded Brazil and Apollo scripts."
+echo -e "Loaded Brazil scripts."
