@@ -1,0 +1,15 @@
+Members: nicksun, monaraje, brockins, rkarthi
+* We want a new model to authenticate the customer, propose that to infosec
+	* Will this really optimize AHT ?
+	Authentication takes time usually for email address and accents are the concerns. ASR might not help with that.
+
+IVR Apps:
+-- WMS
+
+-- PRIME CANCEL 
+	- You need only last 4 of CC and expiry
+-- RETURNS 
+
+-- DNR
+
+Come up with different auth models for these use cases, get them approved by infosec.
