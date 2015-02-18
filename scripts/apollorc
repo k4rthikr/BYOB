@@ -1,4 +1,4 @@
 # Apollo shortcuts
 alias expand-env='getApolloEnvironmentHosts --show N -e'
-
+alias lw="/apollo/wnv/LiveWatchProxy/bin/run-livewatch"
 echo -e "Loaded Apollo scripts."
