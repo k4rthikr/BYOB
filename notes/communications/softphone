@@ -1,0 +1,16 @@
+Brown Bag: Softphone richrod@
+
+G729 -  Good compression, Bad - packet loss
+        Needs really good networks
+
+Opus -  Built for Internet traversal
+
+WebRTC has audio support, why did we not use that?
+What about multiple tabs? Multiple headphones? 
+    * Multiple mayday windows -> races for who gets the call
+Closing a tab will close the call?
+    * Yes
+
+Allow browsers to know their IP
+ICE
+STUN 

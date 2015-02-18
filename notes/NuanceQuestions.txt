@@ -1,0 +1,32 @@
+* V2T
+    * More details, is it launched, are there clients, whether we can use it, timelines ? In particular the on-premise solution. 
+    * Would it work well with telephone audio? Is Recognizer the only product that would work well with IVR audio or will others work well as well?
+    * How different would it be from Recognizer? Does it use MRCP or an audio stream to receive the voice?
+    * Are language packs available in them as well? Does pricing change based off that?
+    * What do you mean by servers? Will we need to buy hardware from Nuance for that?
+        A: Clarified that this is just software. 
+    * Can we try an evaluation copy?
+    
+* Conversational IVR [is a Marketing Term]
+        * Is it Recognizer + an NLU module together? 
+        * If we have our own NLU module, how can we use Recognizer to get something similar?
+        * What is the return data? Does it return an intent? 
+
+    * How much of this is pluggable? Is it coupled with the Nuance IVR Voice platform or is it an independent piece which we can integrate with our systems?
+    * Evaluation license for that
+
+* Our Areas of Interest 
+    * Use cases like Address, Email Address
+        * Address Model - details?
+        * Email Address in general is difficult, but if we ask the user to spell out the email address, will it be easier?
+        * Live Agent ? 
+
+Notes:
+* Office in Seattle - Will it be possible for me to meet someone in person there to clarify my doubts? 
+* NLU - Does not use Open ended dialogue (unconstrained phrases), it uses keywords and word placements (associations) from the audio directly
+* Nuance Dialgoues Modules
+    * Has some grammars and call flows. eg: Address NDM
+* Email Address is very difficult
+
+Other Action Items:
+* Product Manager for V2T, check his schedule and see if we can have a meeting with him

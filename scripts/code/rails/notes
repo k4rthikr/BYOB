@@ -1,0 +1,18 @@
+* Default DB is sqllite 3
+* Philophies : DRY (Do not repeat yourself) and Convention of Configuration
+
+Installation
+* Installed rails (brew)
+* Installed PostGres (nrew) - not sure why I had to install this 
+* rails --version # was showing that something is not installed and that I have to run:
+
+* The above line was failing with the error that libpq was not found.
+sudo env ARCHFLAGS="-arch x86_64" gem install pg -v '0.17.1'
+sudo bundle update pg
+* This fixed things for me
+
+Start
+* rails new shakuni
+* bin/rails server # starts the web server
+
+
