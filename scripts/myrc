@@ -25,7 +25,7 @@ source $RKARTHI_BIN/colors
 
 # Colors for GREP
 export GREP_OPTIONS='--color=auto'
-export PATH=$RKARTHI_BIN:$RKARTHI_BIN/bin:$PATH
+export PATH=$RKARTHI_BIN:$RKARTHI_BIN/bin:/usr/sbin:$PATH
 echo -e "Complete."
 
 # SSH
