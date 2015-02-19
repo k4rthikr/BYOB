@@ -36,3 +36,7 @@ alias S='ssh rkarthi-1.desktop.amazon.com'
 # GIT PROMPT 
 source $RKARTHI_BIN/git-prompt
 export PS1="\[$Green\]\t-[\u@\h] \[$Yellow\]\[$Yellow\]\w\[$IRed\] \$(__git_ps1) \[$White\]\$ "
+
+# Tunnel for JDBC
+# ssh -L 8000:rkarthi-1.desktop.amazon.com:8010 rkarthi-1.desktop.amazon.com
+# Here JDBC is running on rkarthi-1.desktop.amazon at 8010 abd IDE is on your box, listening at 8000

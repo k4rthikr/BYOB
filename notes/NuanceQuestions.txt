@@ -30,3 +30,20 @@ Notes:
 
 Other Action Items:
 * Product Manager for V2T, check his schedule and see if we can have a meeting with him
+
+
+Meeting Notes
+=============
+Transcribing - how do you do it ?
+Semantic Tags - we have our own
+SGC - Tool that converts CSV to a grammar ?
+SLM - 
+
+V2T - 
+Do we need to save the dynamic grammar files or can we just pass it as a string along with request?
+* Disallowers ?
+* V2T is not near real time. 
+* I need to try editing some garmmars
+
+* Evaluation License for NDMs
+* Eg: Newyork 311
