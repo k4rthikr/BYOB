@@ -1,0 +1,2 @@
+# Sample query on Timber
+zcat * | grep -A3 NotKnown | grep IpAddress | cut -d"=" -f2 | sort | uniq | xargs -P5 -n 1 host | cut -d" " -f5 | sort | uniq
