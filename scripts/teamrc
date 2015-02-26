@@ -25,3 +25,6 @@ source $RKARTHI_BIN/nuance/nuancerc
 
 # FreeSWTICH
 alias fs='/apollo/bin/env /apollo/env/TelephonyVoiceService/bin/fs_cli'
+
+# Timber
+alias timberIAD='ssh us-cs-telephony-timberfs-7002.iad7.amazon.com'
