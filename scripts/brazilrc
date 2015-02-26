@@ -53,4 +53,5 @@ function deact() {
     sudo /apollo/bin/runCommand -e $1 -a Deactivate;
 }
 
+alias btp="/apollo/env/BrazilThirdPartyTool/bin/brazil-third-party-tool"
 echo -e "Loaded Brazil scripts."
