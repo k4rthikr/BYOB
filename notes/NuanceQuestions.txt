@@ -47,3 +47,14 @@ Do we need to save the dynamic grammar files or can we just pass it as a string 
 
 * Evaluation License for NDMs
 * Eg: Newyork 311
+
+=============
+
+How much effort is it to create the SLM? - rkarthi@
+Can we interact with Recognizer without MRCP? Direct stream API?
+
+What are the drawbacks of NDEV? Latency? Accuracy?
+* Recognizer seems like a better longer fit + NDEV is cloud based.
+* Can we have on-premise NDEV?
+* V2T is for quality assurance in Call Centers
+

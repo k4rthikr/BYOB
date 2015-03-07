@@ -1,0 +1,25 @@
+Screenpops
+* Next Phone
+    * You can create a contact with or without an actual call. It will be a Phone contact without a media leg.
+
+* If you have never called Amazon - Caller ID is fetched from ISS.
+    * Queries based off number. Shows all accounts connected to the number.
+* Next phone selects marketplace based off skill of the entrypoint
+    * Skill has only 1 marketplace
+* get-agent handler has he details of the call and agent    
+* Once you authenticate a person, Screenpop saves all this data.
+
+* Next time you call it, the list of possible customers will be sorted with screenpop data on top.
+
+Screenpop Service
+
+* GetCustomerIdsForAni
+* SaveCustomerLink - Save association between customer Id and phone number.
+    * Where are the data saved? DYNAMO DB
+
+* There is a logic in SPS to get results
+
+C2C Screenpops
+
+* We pass cust_id and auth to true
+

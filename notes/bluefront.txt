@@ -1,0 +1,46 @@
+* What Nuance product do you have?
+    * Web
+* Data
+    * What level of approval is already there?
+
+* What if we wanted to add more dialogue modules? What is the contract we have with Nuance?
+    * Mark Henry
+
+* For Language Model 
+    * Use CS chats, emails etc
+
+* Endpointing ? 
+
+* Need audio samples (cstech@)
+    * First 30s of audio
+    * Or record 10-20 clips with sample questions?
+        * Fake it?
+
+* Null Cipher?
+* How many words of initial question do we have from chats?
+
+* Docs for the stream API?
+
+=====
+
+Meeting with DPT
+=================
+
+What is the format expected ? 
+Length of audio file (~20s) not an issue.
+What is the overall quantity of audio required?
+    * 1000hours? Thats too high for DPT.
+    * 400 - 2000hrs 
+Summary : We can't give CSA's access to the tool as the tool gives access to many things
+
+* To start with, atleast 20hours of data to go into beta
+
+Type of Transcribing
+* Not as complex as Echo, but maybe similar to mShop or Fire TV?
+
+* libcurl to interact with BlueFront
+
+Security:
+* Discuss with Speech Platform and perhaps Infosec about security
+
+
