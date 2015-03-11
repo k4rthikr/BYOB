@@ -1,0 +1,11 @@
+Skill call flows have different labels which are executed at different points in a call execution
+
+Chat :
+* initiateTrustedChat
+
+Routing:
+
+* How many queues?
+
+Life cycle of C2C Call:
+* Widget calls 

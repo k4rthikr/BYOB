@@ -1,0 +1,17 @@
+Problems as of now:
+* 8Khz
+* Endpoint Detection
+* Streaming  API 
+    * Subtle difference with other
+* Is compression a problem
+
+* 3 parts of NLU
+    * Acoustic Model - Audio + Transcript for training
+    * Language Model
+    * Lexicons
+
+* For more accuracy - You need transcribed data 
+
+* How to get training data
+    * First 20-30 sec of authorized C2C calls 
+

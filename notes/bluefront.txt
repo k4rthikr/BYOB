@@ -1,0 +1,27 @@
+* What Nuance product do you have?
+    * Web
+* Data
+    * What level of approval is already there?
+
+* What if we wanted to add more dialogue modules? What is the contract we have with Nuance?
+    * Mark Henry
+
+* For Language Model 
+    * Use CS chats, emails etc
+
+* Endpointing ? 
+
+* Need audio samples (cstech@)
+    * First 30s of audio
+    * Or record 10-20 clips with sample questions?
+        * Fake it?
+
+* Null Cipher?
+* How many words of initial question do we have from chats?
+
+* Docs for the stream API?
+
+
+
+
+
