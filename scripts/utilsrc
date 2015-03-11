@@ -3,3 +3,13 @@ alias p8='play -r 8k -b 8'
 alias p16='play -r 16k -b 16'
 alias ps8='play -r 8k -b 8 -e signed-int'
 alias ps16='play -r 16k -b 16 -e signed-int'
+alias ps44='play -r 44k -b 16 -e signed-int'
+alias ps96='play -r 96k -b 16 -e signed-int'
+alias soxx='convert16 $1 $2 $3 $4'
+# Convert files between formats
+function convert16() {
+  cmd="sox -r $1 -e signed-int -b 16 $3 -r $2 -e signed-int -b 16 $4"
+  echo "Command: $cmd"
+  $($cmd)
+}
+

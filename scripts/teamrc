@@ -28,3 +28,8 @@ alias fs='/apollo/bin/env /apollo/env/TelephonyVoiceService/bin/fs_cli'
 
 # Timber
 alias timberIAD='ssh us-cs-telephony-timberfs-71001.iad55.amazon.com'
+
+# Debugger
+function remoteDebug() {
+    ssh -L $1:localhost:$1 rkarthi-1.desktop.amazon.com
+}
